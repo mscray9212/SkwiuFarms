@@ -1,0 +1,343 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+    background-color: #F4F4F4;
+    color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    background-color: #222;
+    max-height: 51px; !important;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+.navbar-brand{
+    margin: 0px
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 500px;
+    margin-bottom: 100px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+    margin: 25px 0px;
+}
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+.img-circle{
+    height: 200px;
+    width: 200px;
+}
+
+/* FEATURETTE
+------------------------- */
+
+.featurette-divider {
+    margin: 120px 0; /* Space out the Bootstrap <hr> more */
+    border-top: 1px solid #ccc;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.featurette-image {
+    border-radius: 50%;
+}
+
+.featurette-content {
+    position: relative;
+    top: 95px;
+}
+
+/* CUSTOMIZE PAGE MAIN CONTENT
+-------------------------------------------------- */
+
+.page_title h1{
+    margin-left: 15px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.main-content-title h2{
+    font-weight: 200;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.main-content-title h2 > span{
+    font-weight: 500;
+    color: #333;
+}
+
+.main-content-title h3{
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.main-content{
+    margin-top: 100px;
+}
+
+.area-content{
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+}
+
+.sub-area{
+    margin: 35px 0 35px 0;
+}
+
+.scroll {
+    position:relative;
+    top:0;
+    left:0;
+}
+
+
+/* PROGRESS CHARTS
+-------------------------------------------------- */
+
+.pchart tspan{
+    font-weight: 200;
+}
+
+.pchart{
+    margin: 0 auto;
+}
+
+/* SKILLS
+-------------------------------------------------- */
+
+.skills li{
+    margin: 5px 0px;
+}
+
+/* RESUME
+-------------------------------------------------- */
+
+#job_title {
+    font-size: 2em;
+    color: #333;
+}
+
+.entity{
+    font-size: 19px;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.entity_time{
+    line-height: 2.25;
+    color: #444;
+    margin-bottom: 0px;
+}
+
+.entity_subtitle{
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+.entity_separator{
+    margin-top: 20px;
+}
+
+.entity_separator:first-child{
+    margin-top: 0px;
+}
+
+.interest{
+    height: 100px;
+    width: 100px;
+    margin: 0px auto;
+    background-color: #222;
+    border-radius: 50%;
+}
+
+.interest_icon{
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 37.5%;
+}
+
+.index_list{
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 20px 0px;
+}
+
+.index_list > li{
+    margin: 10px 0px;
+    font-weight: 400;
+}
+
+.fa-download{
+    margin-left: 15px;
+}
+
+.resume_download{
+    margin: 7px 40px;
+}
+
+/* CONTACT
+-------------------------------------------------- */
+
+.main-contact-content{
+    margin-top: 150px ;
+    margin-bottom: 8%;
+}
+
+.contact-form-field{
+    margin: 6px 0;
+}
+
+.contact-form-field input, textarea{
+    width:100%;
+    max-width: 100%; !important;
+    border: 1px solid #e4e4e4;
+    padding: 7px 5px;
+    /*background-color: rgba(112, 211, 255, 0.30);*/
+}
+
+.contact-form-field textarea {
+    max-height: 140px;
+}
+
+.mssg {
+    margin: 15px;
+}
+
+#contact-title{
+    margin-top: -4px;
+    font-size: 62px;
+    font-weight: 400;
+}
+
+.page-title > p {
+    margin: 10px 0 10px 5px;
+    font-size: 16px;
+}
+
+::-webkit-input-placeholder {
+    color: #666;
+}
+
+/* FOOTER
+-------------------------------------------------- */
+
+footer {
+    margin-top: 120px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar {
+        margin-bottom: 0px;
+    }
+
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
